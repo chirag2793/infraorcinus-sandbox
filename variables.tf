@@ -19,7 +19,7 @@ variable "environment_tag" {
   default = "test"
 }
 locals {
-  tags = var.environment_tag == "none" ? { owner = "infraorcinus-test" } : { Environment = var.environment_tag, owner = "infraorcinus-test", purpose = "e2e-pr" }
+  tags = var.environment_tag == "none" ? { owner = "infraorcinus-test" } : { Environment = var.environment_tag, owner = "infraorcinus-test", purpose = "p4-pr-test" }
 }
 variable "public_network_access" {
   type    = bool
